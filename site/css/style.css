@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 450px;
+    height: 200px;
+    padding: 30px;
+    margin: auto;
+    color: black;
+    font-family: "Abril Fatface", cursive;
+    font-size: 75px;
+    text-align: center;
+}
+ 
+h2 {
+    background-color: pink;
+    color: black;
+    float: right;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    text-decoration: none;
+    font-size: 30px;
+    margin: none;
+}
+
+p {
+    background-color: gray;
+    width: 90%;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 18px; 
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    margin: 20px;
+    padding: 10px;
+}
+
+.row {
+    width: 100%;
+    background-color: gray;
+}
+
+.col-lg-4.col-md-6.col-xs-12 {
+    background-color: gray;
+}
+
+.col-lg-4.col-md-12.col-xs-12 {
+    background-color: gray;
+}
+
+/******* large devices *******/
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        border: 3px solid black; 
+        width: 33.33%;
+    }
+}
+
+/******* medium devices *******/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6, .col-md-12 {
+        float: left;
+        border: 3px solid black;
+        margin-top: 5px;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+    .col-md-12 > p {
+        width: 75%;
+    }
+}
+
+/******* small devices *******/
+@media (max-width: 767px) {
+    .col-xs-12 {
+        float: left;
+        border: 3px solid black;
+        width: 100%;
+        margin-top: 5px;
+    }
+}
